@@ -1,5 +1,3 @@
-/* ChangeTracker Privacy Policy - Styles */
-
 :root {
     --primary-color: #2196F3;
     --primary-dark: #1976D2;
@@ -21,330 +19,279 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, 'Helvetica Neue', Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     line-height: 1.6;
-    color: var(--text-color);
-    background: var(--surface);
+    color: #333;
+    background-color: #fff;
     padding: 20px;
 }
 
 .container {
     max-width: 900px;
     margin: 0 auto;
-    background: var(--background);
+    background: #fff;
     padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* Header Styles */
+/* Header */
 header {
-    text-align: center;
     margin-bottom: 40px;
-    padding-bottom: 30px;
-    border-bottom: 3px solid var(--primary-color);
 }
 
-header h1 {
-    color: var(--primary-color);
+h1 {
     font-size: 2.5em;
+    font-weight: 600;
+    color: #000;
     margin-bottom: 10px;
 }
 
 .app-name {
-    font-size: 1.5em;
-    color: var(--primary-dark);
-    font-weight: 600;
-    margin-bottom: 5px;
+    font-size: 1.2em;
+    color: #333;
+    font-weight: 500;
 }
 
 .last-updated {
-    color: var(--text-light);
-    font-style: italic;
     font-size: 0.95em;
+    color: #666;
+    margin-top: 5px;
 }
 
-/* Table of Contents */
+/* Navigation */
 .toc {
-    background: var(--primary-light);
-    padding: 20px;
-    border-radius: 8px;
     margin-bottom: 30px;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
 
 .toc h3 {
-    color: var(--primary-dark);
-    margin-bottom: 15px;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #333;
 }
 
 .toc ul {
     list-style: none;
+    padding-left: 0;
 }
 
-.toc ul li {
-    margin-bottom: 8px;
+.toc li {
+    margin: 5px 0;
 }
 
-.toc ul li a {
-    color: var(--primary-dark);
+.toc a {
+    color: #0066cc;
     text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
 }
 
-.toc ul li a:hover {
-    color: var(--primary-color);
+.toc a:hover {
     text-decoration: underline;
 }
 
-/* Summary Box */
+/* Summary Box - Simple style */
 .summary-box {
-    background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
-    padding: 25px;
-    border-radius: 10px;
-    margin-bottom: 40px;
-    border-left: 5px solid var(--primary-color);
+    margin: 30px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
 }
 
 .summary-box h3 {
-    color: var(--primary-dark);
+    font-size: 1.2em;
     margin-bottom: 15px;
-    font-size: 1.3em;
+    color: #333;
 }
 
 .key-points {
     list-style: none;
+    padding-left: 0;
 }
 
 .key-points li {
-    margin-bottom: 10px;
-    padding-left: 10px;
-    font-size: 1.05em;
+    margin: 8px 0;
+    padding-left: 0;
+    color: #333;
 }
 
-/* Section Styles */
+/* Sections */
 section {
     margin-bottom: 40px;
 }
 
-section h2 {
-    color: var(--primary-dark);
+h2 {
     font-size: 1.8em;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid var(--primary-light);
+    font-weight: 600;
+    color: #000;
+    margin: 30px 0 15px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
 }
 
-section h3 {
-    color: var(--primary-dark);
+h3 {
     font-size: 1.3em;
-    margin-top: 25px;
-    margin-bottom: 15px;
+    font-weight: 600;
+    color: #333;
+    margin: 20px 0 10px 0;
 }
 
-section h4 {
-    color: var(--text-color);
+h4 {
     font-size: 1.1em;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    font-weight: 600;
+    color: #333;
+    margin: 15px 0 10px 0;
 }
 
-section p {
-    margin-bottom: 15px;
-    line-height: 1.7;
+p {
+    margin: 10px 0;
+    color: #333;
 }
 
-section ul, section ol {
-    margin-left: 25px;
-    margin-bottom: 15px;
+/* Lists */
+ul, ol {
+    margin: 10px 0 10px 30px;
 }
 
-section ul li, section ol li {
-    margin-bottom: 10px;
-    line-height: 1.6;
-}
-
-/* Info Boxes */
-.important-box {
-    background: #FFF3E0;
-    border-left: 4px solid var(--accent-color);
-    padding: 15px;
-    margin: 20px 0;
-    border-radius: 5px;
-}
-
-.info-box {
-    background: #E3F2FD;
-    border-left: 4px solid var(--info);
-    padding: 15px;
-    margin: 20px 0;
-    border-radius: 5px;
-}
-
-.info-box ul {
-    margin-top: 10px;
-}
-
-/* Contact Info */
-.contact-info {
-    background: var(--surface);
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 15px;
-}
-
-.contact-info p {
-    margin-bottom: 10px;
+li {
+    margin: 5px 0;
+    color: #333;
 }
 
 /* Links */
 a {
-    color: var(--primary-color);
+    color: #0066cc;
     text-decoration: none;
-    transition: color 0.3s ease;
 }
 
 a:hover {
-    color: var(--primary-dark);
     text-decoration: underline;
+}
+
+/* Info boxes - simplified */
+.important-box,
+.info-box {
+    margin: 15px 0;
+    padding: 15px;
+    border-left: 3px solid #666;
+    background-color: #f9f9f9;
+}
+
+.important-box strong,
+.info-box strong {
+    color: #000;
+}
+
+/* Contact info */
+.contact-info {
+    margin: 15px 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+.contact-info p {
+    margin: 8px 0;
 }
 
 /* Footer */
 footer {
-    margin-top: 60px;
+    margin-top: 50px;
     padding-top: 30px;
-    border-top: 2px solid var(--border);
+    border-top: 2px solid #ddd;
 }
 
 .footer-summary {
-    background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
-    padding: 25px;
-    border-radius: 10px;
     margin-bottom: 20px;
-    border-left: 5px solid var(--success);
 }
 
 .footer-summary h3 {
-    color: #2E7D32;
-    margin-bottom: 15px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.footer-summary p {
+    margin: 8px 0;
+    color: #555;
 }
 
 .footer-meta {
-    text-align: center;
-    color: var(--text-light);
+    margin-top: 20px;
     font-size: 0.9em;
+    color: #666;
 }
 
 .footer-meta p {
-    margin-bottom: 5px;
+    margin: 5px 0;
 }
 
-/* Back to Top Button */
+.footer-meta a {
+    color: #0066cc;
+}
+
+/* Back to top button */
 .back-to-top {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background: var(--primary-color);
-    color: white;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5em;
+    background-color: #333;
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 5px;
     text-decoration: none;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    z-index: 1000;
-}
-
-.back-to-top.visible {
-    opacity: 1;
-    visibility: visible;
+    font-size: 0.9em;
+    display: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s;
 }
 
 .back-to-top:hover {
-    background: var(--primary-dark);
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    background-color: #000;
+    text-decoration: none;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
+.back-to-top.visible {
+    display: block;
+}
 
+/* Responsive */
+@media (max-width: 768px) {
     .container {
         padding: 20px;
     }
 
-    header h1 {
+    h1 {
         font-size: 2em;
     }
 
-    .app-name {
-        font-size: 1.2em;
-    }
-
-    section h2 {
+    h2 {
         font-size: 1.5em;
     }
 
-    section h3 {
+    h3 {
         font-size: 1.2em;
     }
 
     .back-to-top {
         bottom: 20px;
         right: 20px;
-        width: 45px;
-        height: 45px;
-        font-size: 1.3em;
+        padding: 10px 15px;
+        font-size: 0.85em;
     }
 }
 
-@media (max-width: 480px) {
-    .container {
-        padding: 15px;
-    }
-
-    header h1 {
-        font-size: 1.7em;
-    }
-
-    section h2 {
-        font-size: 1.3em;
-    }
-}
-
-/* Print Styles */
 @media print {
-    body {
-        background: white;
-        padding: 0;
-    }
-
-    .container {
-        box-shadow: none;
-        padding: 20px;
-    }
-
-    .back-to-top, .toc {
+    .toc,
+    .back-to-top {
         display: none;
     }
 
-    a {
-        color: black;
-        text-decoration: underline;
+    body {
+        background: #fff;
+    }
+
+    .container {
+        max-width: 100%;
     }
 }
-
